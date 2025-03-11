@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nome da página -->
+    <title>Meu Perfil</title>
+    <!-- Estilo do SimpleCSS -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+
+    <header class="header">
+      <div class="title-container">
+        <div class="text-container">
+          <!-- Título -->
+          <h1 class="title">Meu Perfil</h1>
+          <!-- Subtítulo -->
+          <h2 class="subtitle">
+            Meu nome é Gabriel Barreto, sou Técnico de Eletrônica e aluno de ADS
+          </h2>
+          <!-- Links de acesso -->
+          <div class="link-container">
+            <a href="hhtp">LinkedIn</a>
+            <a href="https://example2.com">Instagram</a>
+          </div>
+        </div>
+        <!-- Foto -->
+        <img src="./foto.jpg" alt="Logo" class="title-image" />
+      </div>
+    </header>
+
+    <style>
+      /* Bordas do header */
+      .header {
+        padding: 20px;
+      }
+
+      /* Flexbox que alinha título e imagem */
+      .title-container {
+        display: flex;
+        align-items: center; /* Alinha os elementos verticalmente */
+      }
+
+      /* Container para o título, subtítulo e Links */
+      .text-container {
+        display: flex;
+        flex-direction: column; /* Organiza o título, subtítulos e Links em uma coluna */
+        align-items: flex-start; /* Alinha tudo ao lado esquerdo da tela */
+      }
+
+      .title {
+        font-size: 30px;
+        margin: 0;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: gray;
+        margin-top: 5px; /* Espaço entre título e subtítulo */
+        text-align: left;
+      }
+
+      .link-container {
+        margin-top: 10px;
+        display: flex;
+        gap: 15px;
+      }
+
+      .link-container a {
+        font-size: 16px;
+      }
+
+      .title-image {
+        width: 150px; /* Tamanho da foto */
+        height: auto;
+        margin-left: 20px; /* Vão entre imagem e texto */
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
