@@ -7,7 +7,8 @@
     <title>Meu Perfil</title>
     <!-- Estilo do SimpleCSS -->
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
-
+    <!-- O estilo que eu escrevi-->
+    <link rel="stylesheet" href="style.css" />
     <header class="header">
       <div class="title-container">
         <div class="text-container">
@@ -18,98 +19,105 @@
             Meu nome é Gabriel Barreto, sou Técnico de Eletrônica e aluno de ADS
           </h2>
           <!-- Links de acesso -->
-          <div class="link-container">
-            <a href="hhtp">LinkedIn</a>
-            <a href="https://example2.com">Instagram</a>
-          </div>
+          <nav class="link-container">
+            <a href="https://www.linkedin.com/in/gabriel-barreto-borges">LinkedIn</a>
+            <a href="https://www.instagram.com/gabb_brgs/">Instagram</a>
+          </nav>
         </div>
         <!-- Foto -->
-        <img src="./foto.jpg" alt="Logo" class="title-image" />
+        <img
+          src="https://raw.githubusercontent.com/gabbrges/AC1-WD/refs/heads/main/foto.jpg"
+          alt="Logo"
+          class="title-image"
+        />
       </div>
     </header>
-
-    <style>
-      /* Bordas do header */
-      .header {
-        padding: 20px;
-      }
-
-      /* Flexbox que alinha título e imagem */
-      .title-container {
-        display: flex;
-        align-items: center; /* Alinha os elementos verticalmente */
-      }
-
-      /* Container para o título, subtítulo e Links */
-      .text-container {
-        display: flex;
-        flex-direction: column; /* Organiza o título, subtítulos e Links em uma coluna */
-        align-items: flex-start; /* Alinha tudo ao lado esquerdo da tela */
-      }
-
-      .title {
-        font-size: 30px;
-        margin: 0;
-      }
-
-      .subtitle {
-        font-size: 18px;
-        color: gray;
-        margin-top: 5px; /* Espaço entre título e subtítulo */
-        text-align: left; /* Coloca o subtítulo alinhado a esquerda */
-      }
-
-      .link-container {
-        /* Contêiner dos Links */
-        margin-top: 10px;
-        display: flex;
-        gap: 15px;
-      }
-
-      .link-container a {
-        font-size: 16px;
-      }
-
-      .title-image {
-        width: 150px; /* Tamanho da foto */
-        height: auto;
-        margin-left: auto;
-      } /* Vão entre imagem e texto */
-      .list-container {
-        display: flex; /* Enables side-by-side layout */
-        justify-content: space-around; /* Spaces lists evenly */
-        gap: 20px; /* Adds spacing between lists */
-      }
-      .list-container ul {
-        padding: 0;
-      }
-      .list-container li {
-        padding: 5px 0; /* Adds spacing between items */
-      }
-    </style>
   </head>
   <body>
+    <!-- Título do corpo -->
     <h1 style="margin-bottom: -10px">Olá!</h1>
+    <!-- Primeiro parágrafo -->
     <p>
       Meu nome é Gabriel e eu sempre fui fascinado por eletrônica e engenharia
-      durante minha vida. Faço projetos com arduino e ESP32 como hobby e o meu
-      sonho é trabalhar com engenharia de hardware.
+      durante toda minha vida. Faço projetos com arduino e ESP32 como hobby e o
+      meu sonho é trabalhar com engenharia de hardware.
     </p>
 
     <div class="list-container">
       <ol>
-        <h2 style="font-size: 100%;">Meus filmes favoritos:</h2>
+        <!-- Lista de filmes -->
+        <h2 style="font-size: 100%; margin-left: -20px">
+          Meus filmes favoritos:
+        </h2>
         <li>Até o Último Homem</li>
         <li>Interestelar</li>
         <li>Cinzas do Paraíso</li>
       </ol>
       <ul>
-        <h2 style="font-size: 100%;">Meus hobbies:</h2>
+        <!-- Lista de hobbies -->
+        <h2 style="font-size: 100%; margin-left: -20px">Meus hobbies:</h2>
         <li>Confeitaria</li>
         <li>Projetos de Eletrônica</li>
         <li>Tocar piano e teclado</li>
-    </ul>
+      </ul>
     </div>
-    <p>Alguns links interessantes:</p>
+    <p class="bullet-paragraph">
+      <!-- Links -->
+      Alguns links interessantes que eu incentivo a leitura:
+    </p>
+    <div class="link-site-favorito">
+      <a href="https://videohighlight.com/"
+        >Meu site favorito (uma ferramenta útil!)</a
+      >
+      <a href="https://www.techtarget.com/whatis/definition/transistor"
+        >Artigo: Como funciona um transistor?</a
+      >
+    </div>
+    <section>
+      <!-- Atividades que eu já realizei -->
+      <h2 style="font-size: 150%">Minhas atividades</h2>
+      <div class="image-container">
+        <div class="image-box">
+          <img
+            src="https://raw.githubusercontent.com/gabbrges/AC1-WD/refs/heads/main/teclado.jpg"
+            alt="Image 1"
+          />
+          <p>
+            <!-- Parágrafo sobre piano, com Link-->
+            Em casa, possuo um casio CTK-2400 doado pelo meu irmão. Um dos
+            aspectos interessantes do teclado é que como instrumento, é
+            relativamente rápido de aprender graças a sua flexibidade de estilos
+            musicais.
+          </p>
+          <a
+            href="https://www.casio-intl.com/asia/en/emi/products/ctk2400/"
+            class="box-link"
+            >Link do Teclado</a
+          >
+        </div>
+        <div class="image-box">
+          <img
+            src="https://raw.githubusercontent.com/gabbrges/AC1-WD/refs/heads/main/barco.jpg"
+            alt="Image 2"
+          />
+          <p>
+            <!-- Parágrafo sobre o projeto do barco, com Link-->
+            Esta foto é de um projeto de barco de controle remoto operado por
+            ESP8266 e ponte H. Um dos conteúdos mais exercitados ao longo do
+            curso de eletrônica é a montagem de projetos com Arduino e ESP.
+          </p>
+          <a
+            href="https://www.arduino.cc/en/Guide/Introduction"
+            class="box-link"
+            >Introdução a Arduino</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- O footer da página -->
+    <footer>
+      Este site foi criado pelo aluno Gabriel Barreto como uma atividade
+      acadêmica, e não representa nenhum projeto real.
+    </footer>
   </body>
 </html>
