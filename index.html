@@ -56,10 +56,11 @@
         font-size: 18px;
         color: gray;
         margin-top: 5px; /* Espaço entre título e subtítulo */
-        text-align: left;
+        text-align: left; /* Coloca o subtítulo alinhado a esquerda */
       }
 
       .link-container {
+        /* Contêiner dos Links */
         margin-top: 10px;
         display: flex;
         gap: 15px;
@@ -72,9 +73,43 @@
       .title-image {
         width: 150px; /* Tamanho da foto */
         height: auto;
-        margin-left: 20px; /* Vão entre imagem e texto */
+        margin-left: auto;
+      } /* Vão entre imagem e texto */
+      .list-container {
+        display: flex; /* Enables side-by-side layout */
+        justify-content: space-around; /* Spaces lists evenly */
+        gap: 20px; /* Adds spacing between lists */
+      }
+      .list-container ul {
+        padding: 0;
+      }
+      .list-container li {
+        padding: 5px 0; /* Adds spacing between items */
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <h1 style="margin-bottom: -10px">Olá!</h1>
+    <p>
+      Meu nome é Gabriel e eu sempre fui fascinado por eletrônica e engenharia
+      durante minha vida. Faço projetos com arduino e ESP32 como hobby e o meu
+      sonho é trabalhar com engenharia de hardware.
+    </p>
+
+    <div class="list-container">
+      <ol>
+        <h2 style="font-size: 100%;">Meus filmes favoritos:</h2>
+        <li>Até o Último Homem</li>
+        <li>Interestelar</li>
+        <li>Cinzas do Paraíso</li>
+      </ol>
+      <ul>
+        <h2 style="font-size: 100%;">Meus hobbies:</h2>
+        <li>Confeitaria</li>
+        <li>Projetos de Eletrônica</li>
+        <li>Tocar piano e teclado</li>
+    </ul>
+    </div>
+    <p>Alguns links interessantes:</p>
+  </body>
 </html>
