@@ -1,0 +1,84 @@
+.header {
+    padding: 20px; /* Bordas do header */
+  }
+
+  .title-container {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha os elementos verticalmente */
+  }
+
+  /* Container para o título, subtítulo e Links */
+  .text-container {
+    display: flex;
+    flex-direction: column; /* Organiza o título, subtítulos e Links em uma coluna */
+    align-items: flex-start; /* Alinha tudo ao canto superior esquerdo do contêiner */
+  }
+
+  .title {
+    font-size: 30px; /* fonte do título */
+    margin: 0; /* margem */
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: gray;
+    margin-top: 5px; /* Espaço entre título e subtítulo */
+    text-align: left; /* Coloca o subtítulo alinhado a esquerda */
+  }
+
+  .link-container {
+    /* Contêiner dos Links */
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .link-container a {
+    font-size: 16px;
+  }
+
+  .title-image {
+    width: 150px; /* Tamanho da foto */
+    height: auto;
+    margin-left: auto;
+  } /* Vão entre imagem e texto */
+  .list-container {
+    display: flex; /* Coloca as listas lado a lado */
+    justify-content: space-around; /* Coloca bordas nas listas */
+    gap: 20px; /* Espaçamento entre as listas */
+  }
+  .list-container ul {
+    padding: 1px;
+  }
+  .list-container li {
+    padding: 1px; /* Coloca espaço entre os itens */
+  }
+  .bullet-paragraph::before {
+    content: "•"; /* Ponto */
+    margin-right: 8px; /* Espaço entre o ponto e o texto */
+    font-size: 20px; /* Tamanho */
+  }
+  .link-site-favorito {
+    display: flex; /* Flexbox */
+    justify-content: space-around; /* aplica padding em volta dos Links */
+    gap: 20px; /* espaço entre os links */
+  }
+  .image-container {
+    display: flex; /* Flexbox */
+    gap: 100px; /* Coloca espaço entre as imagens com texto */
+    justify-content: center; /* Centraliza tudo */
+  }
+
+  .image-box {
+    display: flex;
+    flex-direction: column; /* Faz uma coluna com as imagens e texto */
+    align-items: center; /* Centraliza os elementos */
+    text-align: center; /* Centraliza o texto */
+    width: 500px; /* Ajuste do tamanho da caixa de imagem */
+  }
+
+  img {
+    width: 500px; /* Tamanho das imagens */
+    height: auto;
+    display: block;
+  }
